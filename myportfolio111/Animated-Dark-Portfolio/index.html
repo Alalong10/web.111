@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Responsive Portfolio Website Design</title>
+     <link rel="stylesheet" href="style.css">
+     <!----Font awesome cdn  font icon css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+ <body>
+      <div class="hero-header">
+          <div class="wrapper">
+              <header>
+                 <div class="logo">
+                    <i class="fas fa-grin-beam"></i>
+                 </div>
+                 <nav>
+                     <div class="togglebtn">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                     </div>
+                     <ul class="navlinks">
+                          <li><a href="#">Home</a></li>
+                         <li><a href="#">Education</a></li>
+                         <li><a href="#">About</a></li>
+                         <li><a href="#">Contact</a></li>
+                     </ul>
+                 </nav>
+              </header>
+             <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/jryl.jfif" alt="profile pic">
+                 </div>
+                   <div class="hero-text">
+                      <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                      <h1>JERYL ALALONG</h1>
+                   
+
+                      <div class="btn-group">
+                         <a href="#" class="btn active">Download CV</a>
+                         <a href="#" class="btn">Contact</a>
+                     </div>
+
+                      <div class="social">
+                        
+                          <i href="https://www.facebook.com/Jryl16?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                          <i href="t.me/BossJeryl"><i class="fa-brands fa-telegram"></i></a>
+                          <i href="https://www.instagram.com/jrylalalong/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                          <i href="https://github.com/Alalong10"><i class="fa-brands fa-github"></i></a>
+
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+      <!---Education section--->
+      <div class="edu">
+          <div class="education-pic">
+             <img src="images/jryl.jfif" alt="profile pic">
+          </div>
+
+         <section id="Education">
+            <h1>Education</h1>
+
+         <p>
+            Mamapang Elementary school 
+         </p>
+         <p>
+            Zamboanga City High School - Main
+         </p>
+         <p>Zamboanga City Senior High School - Main</p>
+         <p>
+            Zamboanga Peninsula Polytechnic State University
+         </p>
+          </section>
+      </div>
+        
+        
+      <!---About section--->
+      <section id="About">
+        <h1>About</h1>
+
+        <p>
+            I'm Creative Director and UI/UX Designer from Philippines 
+            working in Web Development and print media. I enjoy turning complex problems into simple, 
+            beautiful and intuitive desings.
+        </p>
+        <p>
+            My aim is to bring across your message and indentity in the most creative way.
+            I created web Design for many famous brand companies.
+        </p>
+      </section>
+      
+      <!---Contact ection--->
+      <section id="Contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+        
+    
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+ </body>
+ </html>
